@@ -12,8 +12,8 @@
 }(jQuery, window));
 
 
-$("img").inViewport(function(px){
+$(".heroImage").inViewport(function(px){
     if(px) {
-      $("img").addClass("triggered")
+      $(".heroImage").addClass("triggered")
     } ;
 });
