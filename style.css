@@ -29,7 +29,7 @@ h1, a{
   font-size: 60px;
 }
 h1{
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px #666666;
 }
 
 a{
@@ -37,26 +37,49 @@ a{
   color: white;
   font-size: 30px;
   transition: text-shadow 0.25s linear;
-  -webkit-text-stroke: 0.75px black;
+  -webkit-text-stroke: 0.75px #666666;
   text-decoration: none;
 }
 a:hover{
-  text-shadow: 0px 0px 20px #efb931;
-  transition: text-shadow 0.25s linear;
+  color: #ecfbc9;
+  transition: color 0.25s linear;
+}
+p{
+  color: #666666;
 }
 
 h3{
     color: white;
 }
+
+img{
+  max-width: 100%;
+  flex: 0 0 auto;
+  align-self: center;
+  opacity: 0;
+}
+
 .heroImage{
   width: 75%;
   opacity: 0;
 }
-img{
-  max-width: 100%;
+
+.header{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 50px;
 }
 
 .imageContainer{
+  display: flex;
+  width: 50vw;
+  height: auto;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+.imageGridContainer{
+  display: flex;
 }
 
 .heroImage.triggered{
@@ -64,6 +87,11 @@ img{
   opacity: 1;
   animation: float 10s infinite;
   animation-timing-function: ease;
+}
+
+img.triggered{
+  opacity: 1;
+  transition: opacity 2s linear;
 }
 
 .heroTitle{
@@ -101,19 +129,41 @@ img{
   margin: 0;
   padding: 0;
 }
+
 .container{
   display: flex;
   flex-direction: row;
   width: 100vw;
   height: 100vh;
 }
+.scriptContainer{
+  padding: 50vh 0vh 50vh 0vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.concept{
+  justify-content: center;
+}
+
+.grid{
+  width: 80vw;
+  flex-wrap: wrap;
+  display: flex;
+}
+.grid > img{
+  width: 450px;
+  margin: 25px;
+}
+
 .textWrapper{
   display: flex;
   flex-direction: column;
   padding-left: 15vw;
   padding-top: 2vh;
   justify-content: center;
-  width: 35vw;
+  width: 50vw;
   height: 85vh;
   line-height: 1.5;
 }
@@ -160,13 +210,13 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
+  width: 100px;
   height: 50px;
   border-style: solid;
   border-width: 1px;
   border-color: white;
   border-radius: 2px;
-    transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 .button:hover{
   cursor: pointer;
@@ -175,7 +225,12 @@ img{
 }
 .button:hover > h3{
   transition: all 0.25s linear;
-  color: black;
+  color: #666666;
+}
+
+.script{
+  display: flex;
+  width: 30vw;
 }
 
 @keyframes float{
