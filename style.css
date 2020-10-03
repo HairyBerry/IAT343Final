@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Deemo';
-  src:url('./res/fonts/FANTIQUE.ttf');
+  src:url('res/fonts/FANTIQUE.ttf');
 }
 
 *{
