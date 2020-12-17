@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Deemo';
-  src:url('FANTIQUE.TTF');
+  src:url('DK Midnight Chalker.otf');
 }
 
 *{
@@ -26,7 +26,7 @@ body{
 
 h1, a{
   font-family: 'Deemo';
-  color: white;
+  color: black;
   font-size: 60px;
 }
 a.button{
@@ -34,16 +34,13 @@ a.button{
   font-size: 24px;
   -webkit-text-stroke: none:
 }
-h1{
-  -webkit-text-stroke: 1px #666666;
-}
+
 
 a{
   cursor: pointer;
-  color: white;
+  color: black;
   font-size: 30px;
   transition: text-shadow 0.25s linear;
-  -webkit-text-stroke: 0.75px #666666;
   text-decoration: none;
 }
 a:hover{
@@ -53,9 +50,11 @@ a:hover{
 p{
   color: #666666;
 }
-
+a > h3{
+  color: white;
+}
 h3{
-    color: white;
+  color: black;
 }
 
 img{
