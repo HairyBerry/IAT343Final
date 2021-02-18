@@ -153,7 +153,7 @@ function init(){
   var update = function()
   {
 
-
+    if(headset && hands && head){
     if(initializeAnimation){
       headset.scale.x += scaler;
       headset.scale.y += scaler;
@@ -208,6 +208,7 @@ function init(){
 
 */
   transition(camera, hands, headset, head);
+}
 
   };
   function transition(camera, hands, headset){
