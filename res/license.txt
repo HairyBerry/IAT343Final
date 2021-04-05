@@ -1,0 +1,11 @@
+Model Information:
+* title:	Imperial Ship Corridor
+* source:	https://sketchfab.com/3d-models/imperial-ship-corridor-b2fb87a3f34548a7a334875b626a37c0
+* author:	tin-can (https://sketchfab.com/tin-can)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Imperial Ship Corridor" (https://sketchfab.com/3d-models/imperial-ship-corridor-b2fb87a3f34548a7a334875b626a37c0) by tin-can (https://sketchfab.com/tin-can) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
