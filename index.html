@@ -1,37 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Awareness VR Home Example </title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
+    <script src="https://unpkg.com/aframe-gradient-sky@1.2.0/dist/gradientsky.min.js"></script>
+
   </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="sky" src="res/negx.jpg">
+        <a-asset-item id="bird" src="res/WoodHouse.glb"></a-asset-item>
 
-  <body onload="loadText()">
-    <div class="hero wrapper">
-      <div id="intro" class="container">
+      </a-assets>
 
-        <h1 class="heroTitle ml3"> Awareness VR </h1>
-        <p id="delay-1">Explore the relationship between our mind and reality</p>
-        <button onclick="switchTransition()" id="delay-2" class="button">Learn More</button>
+      <a-sky src="#sky"></a-sky>
+      <a-entity gltf-model="#bird"></a-entity>
+    </a-scene>
 
-      </div>
-
-      <div id="intro-2" class="long-container">
-
-        <h1>About </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Praesent eget metus ut velit pharetra dictum. Nullam rhoncus dui a ligula vehicula,
-          id ullamcorper leo malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Mauris lacinia scelerisque lacus, vel sollicitudin erat pulvinar id.
-        </p>
-
-      </div>
-
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="text.js"></script>
-    <script src="three.min.js"></script>
-    <script src="GLTFLoader.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>
