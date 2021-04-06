@@ -3,17 +3,25 @@
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 
-
   </head>
   <body>
     <a-scene>
       <a-assets>
         <img id="sky" src="res/negx.jpg">
         <a-asset-item id="bird" src="res/scene.gltf"></a-asset-item>
+        <a-asset-item id="right-obj" src="res/right.obj"></a-asset-item>
+        <a-asset-item id="left-obj" src="res/left.obj"></a-asset-item>
+
+        <a-asset-item id="left-mtl" src="res/left.mtl"></a-asset-item>
+        <a-asset-item id="right-mtl" src="res/right.mtl"></a-asset-item>
+
 
       </a-assets>
 
       <a-sky src="#sky"></a-sky>
+      <a-entity obj-model="obj: #left-obj; mtl: #left-mtl" oculus-touch-controls="hand: left" thumbstick-logging></a-entity>
+      <a-entity obj-model="obj: #right-obj; mtl: #right-mtl" oculus-touch-controls="hand: right" thumbstick-logging></a-entity>
+
       <a-entity gltf-model="#bird"></a-entity>
     </a-scene>
 
