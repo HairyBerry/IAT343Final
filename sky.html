@@ -11,7 +11,6 @@
 
     <a-scene fog="type: linear; color: #e66d2c; near: 20.05; far: 50;" type:renderer="antialias: true; gammaOutput: true;" light="defaultLightsEnabled: false">
       <a-assets timeout="60000">
-        <a-asset-item id="#birds" src="res/sky_2.gltf"></a-asset-item>
 
         <a-asset-item id="right-obj" src="res/right.obj"></a-asset-item>
         <a-asset-item id="left-obj" src="res/left.obj"></a-asset-item>
@@ -27,7 +26,7 @@
       <a-entity obj-model="obj: #left-obj; mtl: #left-mtl" oculus-touch-controls="hand: left" thumbstick-logging></a-entity>
       <a-entity obj-model="obj: #right-obj; mtl: #right-mtl" oculus-touch-controls="hand: right" thumbstick-logging></a-entity>
 
-      <a-entity rotation="0 180 0"material="fog:true;" gltf-model="#birds" animation-mixer shadow="receive: true"></a-entity>
+      <a-entity rotation="0 180 0"material="fog:true;" gltf-model="res/sky_2.gltf" animation-mixer shadow="receive: true"></a-entity>
       <a-entity position="0 10 0" sound="src: url(res/sounds/SkyNarration.mp3); autoplay: true"><a-entity>
 
 
