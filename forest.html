@@ -9,13 +9,7 @@
   <body>
     <a-scene renderer="antialias: true; gammaOutput: true;" light="defaultLightsEnabled: false">
 
-            <!-- camera rig -->
-            <a-entity movement-controls position="0 0 0">
-              <a-entity camera position="0 1.6 0"
-                          look-controls="pointerLockEnabled: true">
-                          <a-cursor></a-cursor>
-              </a-entity>
-            </a-entity>
+
 
       <a-assets>
         <img id="sky" src="res/backgrounds/Night_2.jpg">
@@ -37,8 +31,17 @@
       <a-sky src="#sky"></a-sky>
 
 
-      <a-entity obj-model="obj: #left-obj; mtl: #left-mtl" oculus-touch-controls="hand: left" thumbstick-logging></a-entity>
-      <a-entity obj-model="obj: #right-obj; mtl: #right-mtl" oculus-touch-controls="hand: right" thumbstick-logging></a-entity>
+      <!-- camera rig -->
+      <a-entity movement-controls position="0 0 0">
+        <a-entity camera position="0 1.6 0"
+                    look-controls="pointerLockEnabled: true">
+                    <a-cursor></a-cursor>
+        </a-entity>
+        <a-entity obj-model="obj: #left-obj; mtl: #left-mtl" oculus-touch-controls="hand: left" thumbstick-logging></a-entity>
+        <a-entity obj-model="obj: #right-obj; mtl: #right-mtl" oculus-touch-controls="hand: right" thumbstick-logging></a-entity>
+      </a-entity>
+
+
 
       <a-entity sound="src: url(res/sounds/InTheAir.mp3); autoplay: true; volume: 0.05; loop: true; rolloffFactor: 0;"  gltf-model="#campfire"></a-entity>
       <a-entity light="type: ambient; color: #fff; intensity: 1"></a-entity>
