@@ -10,6 +10,15 @@
 
 
     <a-scene fog="type: linear; color: #3e6aad; near: 0.05; far: 25;" type:renderer="antialias: true; gammaOutput: true;" light="defaultLightsEnabled: false">
+
+            <!-- camera rig -->
+            <a-entity movement-controls position="0 0 6">
+              <a-entity camera position="0 1.6 0"
+                          look-controls="pointerLockEnabled: true">
+                          <a-cursor></a-cursor>
+              </a-entity>
+            </a-entity>
+
       <a-assets timeout="60000">
         <a-asset-item id="right-obj" src="res/right.obj"></a-asset-item>
         <a-asset-item id="left-obj" src="res/left.obj"></a-asset-item>
@@ -22,7 +31,7 @@
       <a-entity obj-model="obj: #left-obj; mtl: #left-mtl" oculus-touch-controls="hand: left" thumbstick-logging></a-entity>
       <a-entity obj-model="obj: #right-obj; mtl: #right-mtl" oculus-touch-controls="hand: right" thumbstick-logging></a-entity>
 
-      <a-entity sound="src: url(res/sounds/oceanAmbience.mp3); autoplay: true; volume: 0.05; loop: true; rolloffFactor: 0;" material="fog:true;" gltf-model="res/ocean.gltf" animation-mixer shadow="receive: true"></a-entity>
+      <a-entity sound="src: url(res/sounds/oceanAmbience.mp3); autoplay: true; volume: 0.05; loop: true; rolloffFactor: 0;" material="fog:true;" gltf-model="res/ocean_2.gltf" animation-mixer shadow="receive: true"></a-entity>
       <a-entity position="0 10 0" sound="src: url(res/sounds/OceanNarration.mp3); autoplay: true"><a-entity>
 
 
