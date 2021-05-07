@@ -15,11 +15,6 @@
         <img id="sky" src="res/backgrounds/Night_2.jpg">
         <a-asset-item id="campfire" src="res/campfire.gltf"></a-asset-item>
 
-        <!--
-        <a-asset-item id="camp-obj" src="res/Camp/camp.obj"></a-asset-item>
-        <a-asset-item id="camp-mtl" src="res/Camp/camp.mtl"></a-asset-item>
-      -->
-
         <a-asset-item id="right-obj" src="res/right.obj"></a-asset-item>
         <a-asset-item id="left-obj" src="res/left.obj"></a-asset-item>
 
@@ -35,7 +30,7 @@
       <a-entity movement-controls position="0 0 0">
         <a-entity camera position="0 1.6 0"
                     look-controls="pointerLockEnabled: true">
-                    <a-cursor></a-cursor>
+
         </a-entity>
         <a-entity obj-model="obj: #left-obj; mtl: #left-mtl" oculus-touch-controls="hand: left" thumbstick-logging></a-entity>
         <a-entity obj-model="obj: #right-obj; mtl: #right-mtl" oculus-touch-controls="hand: right" thumbstick-logging></a-entity>
