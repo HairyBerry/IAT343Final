@@ -2,8 +2,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://raw.githubusercontent.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
   </head>
   <body>
@@ -11,7 +10,7 @@
 
 
 
-      <a-assets>
+      <a-assets timeout="60000">
         <img id="sky" src="res/backgrounds/Night_2.jpg">
         <a-asset-item id="campfire" src="res/campfire.gltf"></a-asset-item>
 
@@ -28,7 +27,7 @@
 
       <!-- camera rig -->
       <a-entity movement-controls position="0 0 0">
-        <a-entity camera position="0 1.6 0"
+        <a-entity camera position="0 0 0"
                     look-controls="pointerLockEnabled: true">
 
         </a-entity>
@@ -37,8 +36,7 @@
       </a-entity>
 
 
-
-      <a-entity sound="src: url(res/sounds/InTheAir.mp3); autoplay: true; volume: 0.05; loop: true; rolloffFactor: 0;"  gltf-model="#campfire"></a-entity>
+      <a-entity sound="src: url(res/sounds/InTheAir.mp3); autoplay: true; volume: 0.5; loop: true; rolloffFactor: 0;"  gltf-model="#campfire"></a-entity>
       <a-entity light="type: ambient; color: #fff; intensity: 1"></a-entity>
       <!--<a-entity obj-model="obj: #camp-obj; mtl: #camp-mtl"></a-entity>-->
     </a-scene>
